@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/cstuncsik/node-slack-app#readme",
   "dependencies": {
-    "@slack/bolt": "^2.1.1"
+    "@slack/bolt": "^2.1.1",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
