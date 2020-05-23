@@ -2,8 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'node-slack-app',
-      script: 'npm',
-      args: 'start',
+      script: '/home/$USER/node-slack-app/index.js',
       exec_mode: 'cluster_mode',
       instances: '2',
       autorestart: true,
@@ -25,7 +24,7 @@ module.exports = {
       repo: 'git@github.com:cstuncsik/node-slack-app.git',
       path: '/home/$USER/node-slack-app',
       'pre-deploy': 'echo "Deploying to production"',
-      'post-deploy': 'yarn install && pm2 startOrReload ecosystem.config.js --env production'
+      'post-deploy': 'yarn install --production && pm2 startOrReload ecosystem.config.js --env production'
     }
   }
 }
