@@ -2,7 +2,8 @@ module.exports = {
   apps: [
     {
       name: 'node-slack-app',
-      script: 'index.js',
+      script: 'npm',
+      args: 'start',
       exec_mode: 'cluster_mode',
       instances: '2',
       autorestart: true,
