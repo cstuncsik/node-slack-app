@@ -21,7 +21,7 @@ module.exports = {
       host: 'tatyom',
       ref: 'origin/master',
       repo: 'git@github.com:cstuncsik/node-slack-app.git',
-      path: '/node-slack-app',
+      path: ' ~/node-slack-app',
       'pre-deploy': 'echo "Deploying to production"',
       'post-deploy': 'pm2 startOrReload ecosystem.config.js --env production'
     }
