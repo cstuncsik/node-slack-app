@@ -25,7 +25,7 @@ module.exports = {
       repo: 'git@github.com:cstuncsik/node-slack-app.git',
       path: '/home/$USER/node-slack-app',
       'pre-deploy': 'echo "Deploying to production"',
-      'post-deploy': 'pm2 startOrReload ecosystem.config.js --env production'
+      'post-deploy': 'yarn install && pm2 startOrReload ecosystem.config.js --env production'
     }
   }
 }
